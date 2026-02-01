@@ -1,0 +1,1 @@
+<form method='post'><input name='title'><button>Add</button></form>{% for t in tasks %}{{t.title}} <a href='/edit/{{t.id}}'>Edit</a> <a href='/delete/{{t.id}}'>Delete</a><br>{% endfor %}<a href='/logout'>Logout</a>
